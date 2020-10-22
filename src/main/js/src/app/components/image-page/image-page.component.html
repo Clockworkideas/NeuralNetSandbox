@@ -1,0 +1,19 @@
+<div class="container" style="width:600px">
+  <div style="margin: 20px">
+    <H1>Upload:</H1>
+  </div>
+  <app-upload-files (uploadCompleted)="refreshList($event)"></app-upload-files>
+</div>
+
+<div class="card">
+  <div class="card-header">List of Files</div>
+  <ul
+    class="list-group list-group-flush"
+    *ngFor="let file of fileInfos | async"
+  >
+    <li class="list-group-item">
+      <img class="thubnail" src="{{'http://'+file.url}}"/>
+      <p>{{file.predictionInfo}}</p>
+    </li>
+  </ul>
+</div>

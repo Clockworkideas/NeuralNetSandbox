@@ -1,0 +1,11 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+com:
+  sngular:
+    sandbox:
+      host: "localhost:8080"
+      uploadDir: "/Users/dahlej/tmp/files"
+      modelDir: "/Users/dahlej/tmp/models"
+      outputDir: "/Users/dahlej/tmp/output"
